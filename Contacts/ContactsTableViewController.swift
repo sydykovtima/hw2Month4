@@ -92,11 +92,12 @@ class ContactsTableViewController: UITableViewController {
 
 extension ContactsTableViewController: NewContactViewControllerDelegate {
   func newContactViewControllerDidCancel(_ 
-       newContactViewController: NewContactViewController) {
+      newContactViewController: NewContactViewController) {
       newContactViewController.dismiss(animated: true, completion: nil)
   }
   
-  func newContactViewController(_ newContactViewController: NewContactViewController, 
+  func newContactViewController(_ 
+       newContactViewController: NewContactViewController, 
       created contact: Contact) {
       let insertIndexPath = IndexPath(row: 0, section: 0)
 
